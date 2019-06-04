@@ -16,6 +16,7 @@ def call(Map param) {
                 steps {
                     container('git'){
                         sh "ls -l"
+                        sh "echo $appName"
                         }
                     
                     }
