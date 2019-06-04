@@ -1,11 +1,12 @@
 #!/usr/bin/env groovy
 
 def call(Map param) {
+    def appName = param.appName
     def containerAgent = libraryResource 'kubernetespod.yaml'
     pipeline {
         agent {
             any {
-                label "uiui"
+                label "$appName"
                 defaultContainer 'jnlp'
                 yamlFile "$containerAgent"
                 }
