@@ -12,7 +12,7 @@ def call(Map param) {
             any {
                 label "$appName"
                 defaultContainer 'jnlp'
-                yamlFile "$containerAgent"
+                yaml "$containerAgent"
                 }
             }
         stages {
