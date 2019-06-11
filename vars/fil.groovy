@@ -11,7 +11,7 @@ def call(Map param) {
         agent {
             any {
                 label "$appName"
-                yaml libraryResource('resources/agent.yaml')
+                yaml libraryResource('agent.yaml')
                 defaultContainer 'jnlp'
                 }
             }
