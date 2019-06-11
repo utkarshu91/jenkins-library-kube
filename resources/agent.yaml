@@ -4,6 +4,7 @@ metadata:
 labels:
 component: ci
 spec:
+  # this is agent.yaml file
   # Use service account that can deploy to all namespaces
  # cloud: kubernetes
   serviceAccountName: default
