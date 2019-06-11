@@ -2,7 +2,7 @@
 
 def call(Map param) {
     def appName = param.appName
-    def containerAgent = libraryResource 'kubernetespod.yaml'
+    def containerAgent = libraryResource 'agent.yaml'
     def GCR_DNS = "asia.gcr.io"
     def GCR_PROJECT_ID = "nonprod-utility-233414"
     def GCR_APP_PATH_PREFIX = param.appName
