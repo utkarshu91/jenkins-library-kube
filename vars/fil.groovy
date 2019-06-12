@@ -11,7 +11,7 @@ def call(Map param) {
     pipeline {
         agent {
             any {
-                label "$appName"
+                label "jenkinsappName"
                 defaultContainer 'jnlp'
                 yaml  "$containerAgent"
                 }
