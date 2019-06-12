@@ -59,6 +59,8 @@ spec:
                         sh "echo $GCR_PROJECT_ID"
                         sh "echo $GCR_APP_PATH_PREFIX"
                         sh "echo $SERVICE_TYPE"
+                        sh "mkdir ./$TESTVAR"
+                        sh "cd ./$TESTVAR"
                         }
                     
                     }
