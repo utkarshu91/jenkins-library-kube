@@ -12,7 +12,7 @@ def call(Map param) {
         agent {
             any {
                 label "$appName"
-                yaml libraryResource '''
+                yaml  '''
 apiVersion: v1
 kind: Pod
 metadata:
