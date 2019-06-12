@@ -1,13 +1,13 @@
 #!/usr/bin/env groovy
 
 def call(Map param) {
-    def appName = param.appName
-    def TESTVAR = param.TESTVAR
+ #   def appName = param.appName
+ #   def TESTVAR = param.TESTVAR
     def containerAgent = libraryResource 'agent.yaml'
-    def GCR_DNS = "asia.gcr.io"
-    def GCR_PROJECT_ID = "nonprod-utility-233414"
-    def GCR_APP_PATH_PREFIX = param.appName
-    def SERVICE_TYPE = param.service_type
+#    def GCR_DNS = "asia.gcr.io"
+#    def GCR_PROJECT_ID = "nonprod-utility-233414"
+#    def GCR_APP_PATH_PREFIX = param.appName
+#    def SERVICE_TYPE = param.service_type
     pipeline {
         agent {
             any {
