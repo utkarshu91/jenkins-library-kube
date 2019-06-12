@@ -80,10 +80,10 @@ spec:
 }
 def mavenbuild(){
     container('maven') {
-        sh "ls -ltra ./$TESTVAR"
+        sh "ls -ltra ./${TESTVAR}"
         //sh ('''
         // VERSION=///$(grep "version" ./$MAIN_MODULE/target/maven-archiver/pom.properties|cut -d'=' -f2)
         // ''')
-        sh "chmod 777 ./$TESTVAR"    
+        sh "chmod 777 ./${TESTVAR}"    
     }
 }
